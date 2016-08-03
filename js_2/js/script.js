@@ -2,9 +2,7 @@ var arr = [];
 
 for (i = 0; i < 5; i++){
 
-	num = i+1;
-
-	arr[i] = prompt("Введите имя " + num);
+	arr[i] = prompt("Введите имя " + (i + 1));
 
 }
 
@@ -20,7 +18,7 @@ for(var i = 0; i < 5; i++) {
 	clon = false;
 }
 
-if(clon === false){
+if(!clon){
 	alert("Имя, " + name + " не найдено");
 } else {
 	alert(name + ", вы успешно вошли");
